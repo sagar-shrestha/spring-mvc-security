@@ -9,7 +9,7 @@ public class HelloWorldController {
 
     @GetMapping("/helloworld")
     public String helloWorld() {
-        return "hello-world";
+        return "homepage";
     }
 
     @ResponseBody

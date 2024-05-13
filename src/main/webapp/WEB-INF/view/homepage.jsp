@@ -13,8 +13,11 @@
     <title>Title</title>
 </head>
 <body>
-<p>I am spring security</p>
-
+<h1>I am Home Page</h1>
+<br/>
+<a href="#">Show trainer's dashboard</a>
+<a href="#">Show coder's dashboard</a>
+<a href="#">Show student's dahsboard</a>
 <form:form action="logout" method="POST">
     <input type="submit" value="logout">
 </form:form>
