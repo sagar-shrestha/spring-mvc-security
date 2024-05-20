@@ -40,11 +40,15 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/hello").authenticated()
                 .antMatchers("/bye").authenticated()
                 .antMatchers("/helloworld").authenticated()
+                .antMatchers("/trainer").hasAuthority("TRAINER")
+                .antMatchers("/coder").hasAuthority("CODER")
                 .antMatchers("/login").permitAll()
                 .and()
                 .formLogin().loginPage("/login").loginProcessingUrl("/process-login")
                 .and().httpBasic()
-                .and().logout();
+                .and().logout().permitAll()
+                .and().exceptionHandling()
+                .accessDeniedPage("/accessDenied");
 //        http.csrf().disable();
     }
 

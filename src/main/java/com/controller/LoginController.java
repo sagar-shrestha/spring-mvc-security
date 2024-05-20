@@ -43,11 +43,16 @@ public class LoginController {
 
     @GetMapping("/trainer")
     public String showTrainerDashboard() {
-        return "trainer-dashboard";
+        return "trainer";
     }
     @GetMapping("/coder")
     public String showCoderDashboard() {
-        return "coder-dashboard";
+        return "coder";
+    }
+
+    @GetMapping("/accessDenied")
+    public String accessDenied() {
+        return "access-denied";
     }
 
 
