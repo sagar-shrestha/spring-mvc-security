@@ -10,14 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43337b20-31ba-488c-86e5-967f7b2ac729" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/access-denied.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/coder.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/trainer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dto/ChangePasswordDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/change-password.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/config/MySecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/config/MySecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/HelloWorldController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/HelloWorldController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dao/SignupDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dao/SignupDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/homepage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/homepage.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -90,28 +90,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.spring-mvc-security [clean,install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.spring-mvc-security [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.spring-mvc-security [install].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Tomcat Server.smart tomact.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/sagar/Downloads/spring-mvc-security/target/spring-mvc-security.war&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.spring-mvc-security [clean,install].executor": "Run",
+    "Maven.spring-mvc-security [clean].executor": "Run",
+    "Maven.spring-mvc-security [install].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Tomcat Server.smart tomact.executor": "Run",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/sagar/Downloads/spring-mvc-security/target/spring-mvc-security.war",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean install" />
@@ -228,11 +231,22 @@
       <workItem from="1712377015781" duration="1172000" />
       <workItem from="1712379715964" duration="196000" />
       <workItem from="1712379920266" duration="4141000" />
-      <workItem from="1716039524946" duration="1584000" />
+      <workItem from="1716039524946" duration="13604000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/controller/LoginController.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

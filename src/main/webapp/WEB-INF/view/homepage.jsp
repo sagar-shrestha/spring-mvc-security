@@ -27,5 +27,12 @@
 <form:form action="logout" method="POST">
     <input type="submit" value="logout">
 </form:form>
+
+<br/>
+<br/>
+<a href="${pageContext.request.contextPath}/deleteUser?username=${username}">Delete Account</a>
+<br/>
+<br/>
+<a href="${pageContext.request.contextPath}/changePassword">Change Password</a>
 </body>
 </html>
